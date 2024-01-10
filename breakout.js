@@ -7,6 +7,7 @@ class Breakout extends Phaser.Scene
         this.bricks;
         this.paddle;
         this.ball;
+        this.scoreBoard;
     }
 
     preload ()
@@ -18,6 +19,9 @@ class Breakout extends Phaser.Scene
     {
         //  Enable world bounds, but disable the floor
         this.physics.world.setBoundsCollision(true, true, true, false);
+
+        // Create points
+        this.scoreBoard = this.add.text(0, 0, "SCORE: 0", {fontSize: '32px', fill: '#fff'});
 
         //  Create the bricks in a 10x6 grid
         this.bricks = this.physics.add.staticGroup({
@@ -64,9 +68,12 @@ class Breakout extends Phaser.Scene
     hitBrick (ball, brick)
     {
         brick.disableBody(true, true);
-
+        score += 5
+        scoreBoard.setText('Score: ' + score);
+        
         if (this.bricks.countActive() === 0)
         {
+            score += 20
             this.resetLevel();
         }
     }
@@ -127,7 +134,7 @@ const config = {
     type: Phaser.WEBGL,
     width: 800,
     height: 600,
-    parent: 'phaser-example',
+    parent: 'phaser-main',
     scene: [ Breakout ],
     physics: {
         default: 'arcade'

@@ -4,6 +4,10 @@ body {
     background-color: #2b2b2b;
 }
 
+#phaser-main {
+    text-align: center;
+}
+
 #feedback {
     width: 600px;
     margin: 0px 0px 0px 32px;
