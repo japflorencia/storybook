@@ -8,7 +8,7 @@ class Breakout extends Phaser.Scene
         this.paddle;
         this.ball;
         this.scoreBoard;
-        this.score = 0;
+        this.score;
     }
 
     preload ()
@@ -22,7 +22,7 @@ class Breakout extends Phaser.Scene
         this.physics.world.setBoundsCollision(true, true, true, false);
 
         // Create points
-        this.scoreBoard = this.add.text(0, 0, "SCORE: " + score, {fontSize: '32px', fill: '#fff'});
+        this.scoreBoard = this.add.text(0, 0, "SCORE: 0", {fontSize: '32px', fill: '#fff'});
 
         //  Create the bricks in a 10x6 grid
         this.bricks = this.physics.add.staticGroup({
@@ -69,12 +69,12 @@ class Breakout extends Phaser.Scene
     hitBrick (ball, brick)
     {
         brick.disableBody(true, true);
-        score += 5
+        this.score += 5
         scoreBoard.setText('Score: ' + score);
         
         if (this.bricks.countActive() === 0)
         {
-            score += 20
+            this.score += 20
             this.resetLevel();
         }
     }
