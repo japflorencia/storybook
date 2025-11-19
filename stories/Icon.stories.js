@@ -26,7 +26,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: 'Flexible icon component with RPG Awesome integration. Supports 100+ gaming-themed icons with customizable size, color, and animations.',
+        component: 'Flexible icon component with RPG Awesome integration. Supports 100+ gaming-themed icons with customizable size, color, and animations. \n https://nagoshiashumari.github.io/Rpg-awesome/',
       },
     },
   },
@@ -34,7 +34,7 @@ export default {
 
 export const Heart = {
   args: {
-    name: 'heart',
+    name: 'hearts',
     size: 'large',
     color: '#ff6b6b',
   },
@@ -66,7 +66,7 @@ export const Gem = {
 
 export const Flame = {
   args: {
-    name: 'flame',
+    name: 'flame-symbol',
     size: 'large',
     color: '#ff7675',
   },
@@ -74,7 +74,7 @@ export const Flame = {
 
 export const Spinning = {
   args: {
-    name: 'hourglasses',
+    name: 'hourglass',
     size: 'large',
     color: '#fdcb6e',
     spin: true,
@@ -89,10 +89,10 @@ export const AllSizes = {
     },
     template: `
       <div style="display: flex; gap: 2rem; align-items: center;">
-        <Icon name="heart" size="small" color="#ff6b6b" />
-        <Icon name="heart" size="medium" color="#ff6b6b" />
-        <Icon name="heart" size="large" color="#ff6b6b" />
-        <Icon name="heart" size="xlarge" color="#ff6b6b" />
+        <Icon name="hearts" size="small" color="#ff6b6b" />
+        <Icon name="hearts" size="medium" color="#ff6b6b" />
+        <Icon name="hearts" size="large" color="#ff6b6b" />
+        <Icon name="hearts" size="xlarge" color="#ff6b6b" />
       </div>
     `,
   }),
@@ -100,7 +100,7 @@ export const AllSizes = {
 
 export const IconPlayground = {
   args: {
-    name: 'heart',
+    name: 'hearts',
     size: 'large',
     color: '#ff6b6b',
     spin: false,
@@ -114,7 +114,7 @@ export const CommonIcons = {
     template: `
       <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 2rem; padding: 2rem;">
         <div style="text-align: center;">
-          <Icon name="heart" size="large" color="#ff6b6b" />
+          <Icon name="hearts" size="large" color="#ff6b6b" />
           <p>heart</p>
         </div>
         <div style="text-align: center;">
@@ -130,11 +130,11 @@ export const CommonIcons = {
           <p>gem</p>
         </div>
         <div style="text-align: center;">
-          <Icon name="flame" size="large" color="#ff7675" />
+          <Icon name="flame-symbol" size="large" color="#ff7675" />
           <p>flame</p>
         </div>
         <div style="text-align: center;">
-          <Icon name="wand" size="large" color="#74b9ff" />
+          <Icon name="crystal-wand" size="large" color="#74b9ff" />
           <p>wand</p>
         </div>
         <div style="text-align: center;">
@@ -150,7 +150,7 @@ export const CommonIcons = {
           <p>book</p>
         </div>
         <div style="text-align: center;">
-          <Icon name="ring" size="large" color="#e17055" />
+          <Icon name="fire-ring" size="large" color="#e17055" />
           <p>ring</p>
         </div>
       </div>

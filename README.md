@@ -3,6 +3,7 @@
 A comprehensive Vue 3 component library showcasing reusable, responsive, and beautifully designed UI components built with modern web standards.
 
 ## 📋 Table of Contents
+
 - [Overview](#overview)
 - [Features](#features)
 - [Components](#components)
@@ -29,11 +30,13 @@ This project is a **Storybook-powered component library** featuring a curated co
 ## 📦 Components
 
 ### Core Components
+
 - **Button** - Primary, secondary, and tertiary button variants with various sizes
 - **Header** - Responsive header component with navigation and user info
 - **Page** - Page layout wrapper component
 
-### UI Components  
+### UI Components
+
 - **Icon** - Flexible icon component with RPG Awesome integration (100+ icons)
 - **Badge** - Versatile badge component for labels and status indicators
 - **Card** - Container component for organized content display
@@ -43,6 +46,7 @@ This project is a **Storybook-powered component library** featuring a curated co
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js (v14 or higher)
 - npm or yarn
 
@@ -50,8 +54,8 @@ This project is a **Storybook-powered component library** featuring a curated co
 
 ```bash
 # Clone the repository
-git clone https://github.com/japflorencia/japflorencia.github.io.git
-cd japflorencia.github.io
+git clone https://github.com/japflorencia/storybook.git
+cd storybook
 
 # Install dependencies
 npm install
@@ -79,6 +83,7 @@ Storybook will open at `http://localhost:6006`
 4. Add component CSS in a separate `.css` file with the same name
 
 ### Component Structure Example
+
 ```
 stories/
 ├── MyComponent.vue
@@ -87,6 +92,7 @@ stories/
 ```
 
 ### Storybook Features Used
+
 - **Autodocs** - Automatic documentation generation
 - **Controls** - Interactive UI for component prop exploration
 - **Essentials** - Actions, backgrounds, measure, outline, and viewport tools
@@ -97,8 +103,9 @@ stories/
 The Icon component integrates the [RPG Awesome Icon Library](https://github.com/nagoshiashumari/Rpg-Awesome) featuring 100+ gaming-themed icons perfect for RPGs, games, and fantasy-themed applications.
 
 ### Icon Usage
+
 ```vue
-<Icon name="heart" size="large" />
+<Icon name="hearts" size="large" />
 <Icon name="sword" color="#ff6b6b" />
 <Icon name="shield" size="small" />
 ```
@@ -129,7 +136,7 @@ This library includes several powerful Storybook addons:
 
 ## 🌐 Live Demo
 
-View the live component library: [japflorencia.github.io](https://japflorencia.github.io)
+View the live component library: [japflorencia.github.io/storybook](https://japflorencia.github.io/storybook)
 
 ## 📄 License
 
