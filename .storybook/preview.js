@@ -1,3 +1,5 @@
+import 'rpg-awesome/css/rpg-awesome.css';
+
 /** @type { import('@storybook/vue3').Preview } */
 const preview = {
   parameters: {
